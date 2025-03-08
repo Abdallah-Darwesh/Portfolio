@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+  <link rel="icon" href="images/boat6.webp" type="image/webp">
+
+</head>
+<body>
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+      <a href="#home" class="logo">MyPortfolio</a>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Home / Parallax Section -->
+  <section class="main" id="home">
+    <!-- Animated Background Elements -->
+    <img src="images/stars1.webp" id="stars" alt="stars" />
+    <img src="images/moon2.webp" id="moon" alt="moon" />
+    <img src="images/mountains3.webp" id="mountains3" alt="mountains" />
+    <img src="images/mountains4.webp" id="mountains4" alt="mountains" />
+    <img src="images/river5.webp" id="river" alt="river" />
+    <img src="images/boat6.webp" id="boat" alt="boat" />
+    <img src="images/mountains7.webp" id="mountains7" alt="mountains" />
+    <!-- Title Text -->
+    <h2 class="main-title">Welcome to My Portfolio</h2>
+
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section about-section">
+    <div class="about-container">
+      <div class="about-image">
+        <!-- Replace with your profile picture -->
+        <img src="images/portofolio.jpg" alt="My Profile Picture" />
+      </div>
+      <div class="about-text">
+        <h2>Let Me Introduce Myself!</h2>
+        <p>
+          I’m a full‑stack developer specializing in end‑to‑end solutions—from polished front‑end interfaces (Angular, TypeScript, Sass) to scalable back‑end architectures (ASP.NET, C#). My work spans industries—think custom e‑commerce platforms or pharmacy inventory systems—always with a focus on clean, maintainable code and business‑driven outcomes.
+        </p>
+        <p>
+          Beyond coding, I blend technical execution with strategic planning. Whether it's scoping a project’s roadmap or aligning tech choices with ROI, every line of code serves a purpose.
+        </p>
+        <p>
+          What sets me apart? I ask questions first, ensuring I fully understand your vision and challenges to build solutions that truly solve problems. Transparency and collaboration are key.
+        </p>
+        <p>
+          If you’re looking for a developer who balances innovation with practicality, let’s connect and turn your ideas into reality.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section projects-section">
+    <h2 class="section-title">My Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card" data-title="E-commerce (Api)" data-img="images/project-1.png" data-demo="https://e-commerce-nine-livid-73.vercel.app/" data-github="https://github.com/Abdallah-Darwesh/E-commerce" data-tools="HTML, CSS, JavaScript, Tailwind, Angular, API">
+        <img src="images/project-1.png" alt="E-commerce (Api)" />
+        <h3>E-commerce (Api)</h3>
+      </div>
+      <div class="project-card" data-title="E-commerce (Design)" data-img="images/project-2.png" data-demo="https://abdallah-darwesh.github.io/Portofolio/full%20website/Project%201/index.html" data-github="https://github.com/Abdallah-Darwesh/Portofolio/tree/main/full%20website/Project%201" data-tools="HTML, CSS, JavaScript, Bootstrap">
+        <img src="images/project-2.png" alt="E-commerce (Design)" />
+        <h3>E-commerce (Design)</h3>
+      </div>
+      <div class="project-card" data-title="StartUp(Design)" data-img="images/project-3.png" data-demo="https://abdallah-darwesh.github.io/Portofolio/full%20website/img%20website/index.html" data-github="https://github.com/Abdallah-Darwesh/Portofolio/tree/main/full%20website/Digital%20Markting" data-tools="HTML, CSS, JavaScript, Bootstrap">
+        <img src="images/project-3.png" alt="StartUp(Design)" />
+        <h3>StartUp(Design)</h3>
+      </div>
+      <div class="project-card" data-title="Virtual Banking (Design)" data-img="images/project-4.png" data-demo="https://abdallah-darwesh.github.io/Portofolio/full%20website/Digital%20Markting/index.html" data-github="https://github.com/Abdallah-Darwesh/Portofolio/tree/main/full%20website/img%20website" data-tools="HTML, CSS, JavaScript, Bootstrap">
+        <img src="images/project-4.png" alt="Virtual Banking (Design)" />
+        <h3>Virtual Banking (Design)</h3>
+      </div>
+      <div class="project-card" data-title="Simple Profile (For Practice Angular)" data-img="images/project-5.png" data-demo="https://angular-assigmnent.vercel.app/home" data-github="https://github.com/Abdallah-Darwesh/Portofolio/tree/main/full%20website/img%20website" data-tools="HTML, CSS, JavaScript, Bootstrap">
+        <img src="images/project-5.png" alt="Simple Profile (For Practice Angular)" />
+        <h3>Simple Profile (For Practice Angular)</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Details Modal -->
+  <div id="project-modal" class="modal">
+    <div class="modal-content">
+      <span id="modal-close" class="close">&times;</span>
+      <h2 id="modal-title">Project Title</h2>
+      <img id="modal-img" src="" alt="Project Image" />
+      <p id="modal-tools"><strong>Tools used:</strong></p>
+      <div class="modal-links">
+        <a id="demo-link" href="#" target="_blank" class="btn">Live Demo</a>
+        <a id="github-link" href="#" target="_blank" class="btn">GitHub</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section contact-section">
+    <h2 class="section-title">Get In Touch</h2>
+    <form id="contact-form">
+      <!-- Three fields: Name, Email, and Message -->
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Your Name" required />
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Your Email" required />
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+      </div>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Scripts -->
+  <script src="scripts/scripts.js"></script>
+</body>
+</html>
